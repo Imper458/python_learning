@@ -19,7 +19,7 @@ async def work():
 async def main():
     task1 = asyncio.create_task(eat())
     task2 = asyncio.create_task(work())
-    task1.cancel()
+    task1.cancel()#先取消了，task1还没执行
 
     # await task1
     # await task2

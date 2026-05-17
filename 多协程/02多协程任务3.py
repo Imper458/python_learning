@@ -6,6 +6,7 @@ async def eat():
     for i in range(6):
         print('正在吃饭...')
         await asyncio.sleep(0)
+        print('吃饭中')
 
 
 async def work():
